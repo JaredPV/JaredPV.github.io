@@ -1,6 +1,6 @@
 <?php
 
-require 'init.php';
+require 'conexion.php';
 
 
 $email=$_POST['email'];

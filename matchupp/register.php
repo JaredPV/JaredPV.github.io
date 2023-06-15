@@ -1,6 +1,6 @@
 <?php
 
-require 'init.php';
+require 'conexion.php';
 
 $name = $_POST["name"];
 $lastname = $_POST["lastname"];
@@ -14,7 +14,7 @@ $sql = "INSERT INTO user_account(first_name, last_name, nickname, email, pass, c
 if(mysqli_query($con, $sql)){
     echo "Success";
 }else{
-    echo "Error".myslqi_error($con);
+    echo "Error";
 }
 mysqli_close($con)
 
